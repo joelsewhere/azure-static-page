@@ -28,9 +28,11 @@ jobs:
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
+          workingDirectory: '$(Pipeline.Workspace)'
+          app_location: '/_site'
+          output_location: ''
           skip_app_build: true
-          app_location: "_site/index.html" # App source code path
-          output_location: "" # Built app content directory - optional
+          skip_api_build: true
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
