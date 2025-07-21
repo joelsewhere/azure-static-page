@@ -1,9 +1,6 @@
 {
   "trailingSlash": "auto",
   "routes": [
-    {
-      "route": "*",
-      "allowedRoles": ["scion", "admin"]
-    }
+
   ]
 }
